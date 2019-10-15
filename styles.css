@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 60px 0;
+  height: 100vh;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#app {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.user-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-input-wrapper h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.input-item {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.input-item input {
+  border: none;
+  background-color: #fff;
+  padding: 10px;
+  width: 320px;
+  font-size: 17px;
+  outline: none;
+}
+
+.input-item-text {
+  background-color: #fff;
+  align-self: stretch;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.input-item-text.prepend {
+  border-right: 1px solid #ddd;
+  line-height: 29px;
+}
+
+.input-item-text.apprend {
+  border-left: 1px solid #ddd;
+}
+
+.location-icon {
+  background-image: url('icon.png');
+  background-size: 58px 29px;
+  background-position: 2px 0;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 29px;
+  height: 29px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.16s ease-out;
+}
+
+.show-weather-inner {
+  background-image: url('//cdn.apixu.com/apixu-weather-widget/img/apixu-backgrounds/4_widget3.png');
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px 30px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.weather-pic {
+  display: block;
+  margin: auto;
+}
+
+.weather-title {
+  text-transform: capitalize;
+  color: #ddd;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.location-info span {
+  display: block;
+  margin-top: 5px;
+  font-size: 65%;
+}
+
+.current-weather-stats h5 {
+  color: #ddd;
+  font-weight: 400;
+  margin: 0;
+}
+
+.current-weather-stats h2 {
+  margin: 13px 0 10px;
+}
+
+.show-error-message {
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.git-fork-me-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+
+/* Responsive Code */
+@media screen and (max-width: 700px) {
+  #app {
+    padding: 15px;
+  }
+
+  .git-fork-me-btn img {
+    width: 100px;
+  }
+
+  .user-input-wrapper h3 {
+    font-size: 28px;
+  }
+
+  .input-item input {
+    width: 100%;
+  }
+
+  .show-weather-inner {
+    padding: 15px 15px 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input-item-text.prepend {
+    display: none;
+  }
+}

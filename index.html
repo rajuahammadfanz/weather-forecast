@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="See your cureent location weather. Weather Forecast, City Weather, Country Weather.">
+    <meta name="keywords" content="weather today, weather channel, weather forecast, weather radar,weather tomorrow,weather report,local weather">
+    <meta name="author" content="Raju Ahammad">
+    <link rel="shortcut icon" href="https://weatherstack.com/site_images/weather_icon_partly_cloudy.svg" type="image/x-icon">
+
+    <title>Weather Forecast || Raju Ahammad</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="app" class="text-center">
+        <div class="app-inner">
+            <div class="user-input-wrapper">
+                <h3 class="text-bold">See Your Location Weather</h3>
+
+                <div class="city-input-area">
+                    <div class="input-item">
+                        <span class="input-item-text prepend">Location</span>
+                        <input type="text" class="city-input" placeholder="type city & hit enter!" />
+                        <span class="input-item-text apprend"> <span class="location-icon"><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-weather-wrapper mt-5">
+                <div class="show-weather-inner">
+                    <div class="current-weather-stats">
+                        <img class="weather-pic" />
+                        <span class="weather-title"></span>
+                        <h2 class="temp">C</h2>
+                        <h4 class="location-info"></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-error-message"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
