@@ -16,7 +16,7 @@ errorMessage.style.display = "none";
 
 
 // API Info
-var BASE = "http://api.weatherstack.com/current",
+var BASE = "https://api.weatherstack.com/current",
     KEY = "b0128c5c74dd9ffc404e862591b79580";
 
 // API GET Data
