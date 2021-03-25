@@ -16,15 +16,14 @@ errorMessage.style.display = "none";
 
 
 // API Info
-var BASE = "https://api.weatherstack.com/current",
-    KEY = "b0128c5c74dd9ffc404e862591b79580";
+var BASE = "http://api.weatherstack.com/current",
+    KEY = "e392e8b237cc970dfb2f26f61e080992";
 
 // API GET Data
 function weatherForecast(q) {
     fetch(`${BASE}?access_key=${KEY}&query=${q}`)
         .then(respons => respons.json())
         .then(data => {
-            console.log(data);
             locationName.innerHTML = `${data.location.name}, ${data.location.country}. <span>Local Time: ${data.location.localtime}</span>`;
             weatherTemp.innerHTML = `${data.current.temperature} <sup>&deg;</sup>C`;
             weatherTitle.innerHTML = data.current.weather_descriptions[0];
