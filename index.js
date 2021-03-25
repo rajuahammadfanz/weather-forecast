@@ -16,7 +16,7 @@ errorMessage.style.display = "none";
 
 
 // API Info
-var BASE = "http://api.weatherstack.com/current",
+var BASE = "https://api.weatherstack.com/current",
     KEY = "e392e8b237cc970dfb2f26f61e080992";
 
 // API GET Data
@@ -78,7 +78,7 @@ function gitFork(url) {
     document.querySelector("body").appendChild(anchorBtn);
 }
 
-gitFork('https://github.com/rajuahammadfanz/weather-forecast');
+gitFork('https://github.com/therajuahammad/weather-forecast');
 
 /*
   position: fixed;top: 0;right: 0;z-index: 999;
